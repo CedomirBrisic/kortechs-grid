@@ -1,11 +1,11 @@
 .container-collapsed {
   display: -ms-grid;
   display: grid;
-      -ms-grid-columns: 300px auto;
-      grid-template-columns: 300px auto;
-      -ms-grid-rows: 80px auto;
-      grid-template-rows: 80px auto;
-      grid-template-areas:
+  -ms-grid-columns: 300px auto;
+  grid-template-columns: 300px auto;
+  -ms-grid-rows: 80px auto;
+  grid-template-rows: 80px auto;
+  grid-template-areas:
     "header header"
     "sidebar content";
   width: 100%;
@@ -14,11 +14,11 @@
 .container-not-collapsed {
   display: -ms-grid;
   display: grid;
-      -ms-grid-columns: 80px auto;
-      grid-template-columns: 80px auto;
-      -ms-grid-rows: 80px auto;
-      grid-template-rows: 80px auto;
-      grid-template-areas:
+  -ms-grid-columns: 80px auto;
+  grid-template-columns: 80px auto;
+  -ms-grid-rows: 80px auto;
+  grid-template-rows: 80px auto;
+  grid-template-areas:
     "header header"
     "sidebar content";
   width: 100%;
@@ -33,7 +33,7 @@
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 20% 80%;
-      grid-template-columns: 20% 80%;
+  grid-template-columns: 20% 80%;
 }
 .header h1 {
   text-align: center;
@@ -52,7 +52,7 @@
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 20% 80%;
-      grid-template-columns: 20% 80%;
+  grid-template-columns: 20% 80%;
   margin-top: 30px;
 }
 .icon {
@@ -60,7 +60,7 @@
 }
 .content {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: content;
@@ -69,7 +69,7 @@
   padding: 10px;
   gap: 16px;
   -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 @media (max-width: 666px) {
   .header {
@@ -136,11 +136,11 @@
   .container-collapsed {
     display: -ms-grid;
     display: grid;
-        -ms-grid-columns: 80px auto;
-        grid-template-columns: 80px auto;
-        -ms-grid-rows: 80px auto;
-        grid-template-rows: 80px auto;
-        grid-template-areas:
+    -ms-grid-columns: 80px auto;
+    grid-template-columns: 80px auto;
+    -ms-grid-rows: 80px auto;
+    grid-template-rows: 80px auto;
+    grid-template-areas:
       "header header"
       "sidebar content";
     width: 100%;
@@ -151,7 +151,7 @@
   }
   .content {
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: content;
@@ -160,7 +160,7 @@
     display: grid;
     gap: 16px;
     -ms-grid-rows: 33% 66% 99%;
-        grid-template-rows: 33% 66% 99%;
+    grid-template-rows: 33% 66% 99%;
   }
   .half-container {
     display: -ms-grid;
@@ -168,7 +168,7 @@
     gap: 16px;
     grid-auto-flow: row;
     -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
   .third-container {
     display: -ms-grid;
@@ -176,7 +176,14 @@
     gap: 16px;
     grid-auto-flow: row;
     -ms-grid-rows: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .full-container {
+    position: -webkit-sticky;
+    position: sticky;
+    top: -1px;
+    z-index: 1;
+    background-color: whitesmoke;
   }
 }
 
@@ -184,11 +191,11 @@
   .container-collapsed {
     display: -ms-grid;
     display: grid;
-        -ms-grid-columns: 80px auto;
-        grid-template-columns: 80px auto;
-        -ms-grid-rows: 80px auto;
-        grid-template-rows: 80px auto;
-        grid-template-areas:
+    -ms-grid-columns: 80px auto;
+    grid-template-columns: 80px auto;
+    -ms-grid-rows: 80px auto;
+    grid-template-rows: 80px auto;
+    grid-template-areas:
       "header header"
       "sidebar content";
     width: 100%;
@@ -199,7 +206,7 @@
   }
   .content {
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: content;
@@ -208,21 +215,21 @@
     display: grid;
     gap: 16px;
     -ms-grid-rows: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
   }
   .half-container {
     display: -ms-grid;
     display: grid;
     gap: 16px;
     -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   .third-container {
     display: -ms-grid;
     display: grid;
     gap: 16px;
     -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -230,11 +237,11 @@
   .container-collapsed {
     display: -ms-grid;
     display: grid;
-        -ms-grid-columns: 300px auto;
-        grid-template-columns: 300px auto;
-        -ms-grid-rows: 80px auto;
-        grid-template-rows: 80px auto;
-        grid-template-areas:
+    -ms-grid-columns: 300px auto;
+    grid-template-columns: 300px auto;
+    -ms-grid-rows: 80px auto;
+    grid-template-rows: 80px auto;
+    grid-template-areas:
       "header header"
       "sidebar content";
     width: 100%;
@@ -242,7 +249,7 @@
   }
   .content {
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: content;
@@ -251,21 +258,21 @@
     display: grid;
     gap: 16px;
     -ms-grid-rows: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
   }
   .half-container {
     display: -ms-grid;
     display: grid;
     gap: 16px;
     -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   .third-container {
     display: -ms-grid;
     display: grid;
     gap: 16px;
     -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   .app-visible {
     display: inline-block;
