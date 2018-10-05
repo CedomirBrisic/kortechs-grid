@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 
 class App extends Component {
@@ -17,125 +16,149 @@ class App extends Component {
   render() {
     return (
       <div
-        class={
+        className={
           this.state.isCollapsed
             ? "container-collapsed"
             : "container-not-collapsed"
         }
       >
-        <div class="header">
+        <div className="header">
           <button onClick={this.setIsCollapsed}>&#9776;</button>
           <h1>HEADER</h1>
         </div>
-        <div class="sidebar">
+        <div className="sidebar">
           <ul>
             <li>
-              <span class="icon">&#9786;</span>
+              <span className="icon">&#9786;</span>
               <span
-                class={this.state.isCollapsed ? "app-visible" : "app-hidden"}
+                className={
+                  this.state.isCollapsed ? "app-visible" : "app-hidden"
+                }
               >
                 App 1
               </span>
             </li>
             <li>
-              <span class="icon">&#9786;</span>
+              <span className="icon">&#9786;</span>
               <span
-                class={this.state.isCollapsed ? "app-visible" : "app-hidden"}
+                className={
+                  this.state.isCollapsed ? "app-visible" : "app-hidden"
+                }
               >
                 App 2
               </span>
             </li>
             <li>
-              <span class="icon">&#9786;</span>
+              <span className="icon">&#9786;</span>
               <span
-                class={this.state.isCollapsed ? "app-visible" : "app-hidden"}
+                className={
+                  this.state.isCollapsed ? "app-visible" : "app-hidden"
+                }
               >
                 App 3
               </span>
             </li>
             <li>
-              <span class="icon">&#9786;</span>
+              <span className="icon">&#9786;</span>
               <span
-                class={this.state.isCollapsed ? "app-visible" : "app-hidden"}
+                className={
+                  this.state.isCollapsed ? "app-visible" : "app-hidden"
+                }
               >
                 App 4
               </span>
             </li>
             <li>
-              <span class="icon">&#9786;</span>
+              <span className="icon">&#9786;</span>
               <span
-                class={this.state.isCollapsed ? "app-visible" : "app-hidden"}
+                className={
+                  this.state.isCollapsed ? "app-visible" : "app-hidden"
+                }
               >
                 App 5
               </span>
             </li>
             <li>
-              <span class="icon">&#9786;</span>
+              <span className="icon">&#9786;</span>
               <span
-                class={this.state.isCollapsed ? "app-visible" : "app-hidden"}
+                className={
+                  this.state.isCollapsed ? "app-visible" : "app-hidden"
+                }
               >
                 App 6
               </span>
             </li>
             <li>
-              <span class="icon">&#9786;</span>
+              <span className="icon">&#9786;</span>
               <span
-                class={this.state.isCollapsed ? "app-visible" : "app-hidden"}
+                className={
+                  this.state.isCollapsed ? "app-visible" : "app-hidden"
+                }
               >
                 App 7
               </span>
             </li>
             <li>
-              <span class="icon">&#9786;</span>
+              <span className="icon">&#9786;</span>
               <span
-                class={this.state.isCollapsed ? "app-visible" : "app-hidden"}
+                className={
+                  this.state.isCollapsed ? "app-visible" : "app-hidden"
+                }
               >
                 App 8
               </span>
             </li>
             <li>
-              <span class="icon">&#9786;</span>
+              <span className="icon">&#9786;</span>
               <span
-                class={this.state.isCollapsed ? "app-visible" : "app-hidden"}
+                className={
+                  this.state.isCollapsed ? "app-visible" : "app-hidden"
+                }
               >
                 App 9
               </span>
             </li>
             <li>
-              <span class="icon">&#9786;</span>
+              <span className="icon">&#9786;</span>
               <span
-                class={this.state.isCollapsed ? "app-visible" : "app-hidden"}
+                className={
+                  this.state.isCollapsed ? "app-visible" : "app-hidden"
+                }
               >
                 App 10
               </span>
             </li>
             <li>
-              <span class="icon">&#9786;</span>
+              <span className="icon">&#9786;</span>
               <span
-                class={this.state.isCollapsed ? "app-visible" : "app-hidden"}
+                className={
+                  this.state.isCollapsed ? "app-visible" : "app-hidden"
+                }
               >
                 App 11
               </span>
             </li>
             <li>
-              <span class="icon">&#9786;</span>
+              <span className="icon">&#9786;</span>
               <span
-                class={this.state.isCollapsed ? "app-visible" : "app-hidden"}
+                className={
+                  this.state.isCollapsed ? "app-visible" : "app-hidden"
+                }
               >
                 App 12
               </span>
             </li>
           </ul>
         </div>
-        <div class="content">
-          <div class="full-container">
+        <div className="content">
+          <div className="full-container">
             <div>Full</div>
           </div>
-          <div class="half-container">
+          <div className="half-container">
             <div>Half</div>
             <div>Half</div>
           </div>
-          <div class="third-container">
+          <div className="third-container">
             <div>Third</div>
             <div>Third</div>
             <div>Third</div>
